@@ -1,0 +1,134 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Delius;
+  background-color: #e7e8e4;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.contain {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+header {
+  background-image: url("../img/com.png");
+  height: 45rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.top {
+  background-color: #68777c;
+  padding: 0.25rem 0;
+}
+
+.top img {
+  width: 40px;
+  height: 40px;
+}
+
+.hamburger div {
+  width: 1.5rem;
+  height: 2px;
+  background-color: #ffde59;
+  margin: 0.5rem 0;
+}
+
+.enter {
+  margin-top: 25rem;
+  color: white;
+}
+
+.enter a {
+  color: red;
+}
+
+.enter h2 {
+  padding-bottom: 1rem;
+}
+
+.enter h3 {
+  font-family: "Montaga", sans-serif;
+  padding-bottom: 1rem;
+}
+
+.login {
+  padding: 1rem;
+  background-color: #ffde59;
+  border-radius: 20px;
+  width: 5rem;
+  text-align: center;
+}
+
+.media {
+  text-align: center;
+  margin: 5rem 0;
+}
+
+.connect h2 {
+  font-weight: bold;
+  padding-bottom: 3rem;
+}
+
+.social a {
+  padding: 2rem;
+  color: #68777c;
+}
+
+.quicklinks {
+  border-top: 1px solid #68777c;
+  padding: 3rem 0;
+}
+
+.link h3 {
+  padding-bottom: 1rem;
+}
+
+.link a {
+  padding: 0.25rem 0;
+  color: black;
+}
+
+.down {
+  padding-top: 3rem;
+}
