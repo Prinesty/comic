@@ -57,6 +57,13 @@ header {
   background-repeat: no-repeat;
 }
 
+header ul {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+}
+
 .top {
   background-color: #68777c;
   padding: 0.25rem 0;
@@ -74,6 +81,21 @@ header {
   margin: 0.5rem 0;
 }
 
+.health {
+  position: relative;
+  top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #008080;
+  padding: 1rem;
+}
+
+.health a {
+  color: white;
+}
+
 .enter {
   margin-top: 25rem;
   color: white;
@@ -88,7 +110,7 @@ header {
 }
 
 .enter h3 {
-  font-family: "Montaga", sans-serif;
+  font-family: Montaga;
   padding-bottom: 1rem;
 }
 
@@ -112,12 +134,11 @@ header {
 
 .social a {
   padding: 2rem;
-  color: #68777c;
 }
 
 .quicklinks {
   border-top: 1px solid #68777c;
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 
 .link h3 {
@@ -131,4 +152,168 @@ header {
 
 .down {
   padding-top: 3rem;
+}
+
+.down a {
+  color: black;
+}
+
+/** Media Query **/
+@media only screen
+and (min-width: 720px)
+and (max-width: 1600px) {
+  #laptop {
+    visibility: visible;
+  }
+
+  #tablet {
+    display: none;
+  }
+
+  #phone {
+    display: none;
+  }
+}
+
+@media only screen
+and (max-width: 720px) {
+  #laptop {
+    display: none;
+  }
+
+  #tablet {
+    visibility: visible;
+  }
+
+  #phone {
+    display: none;
+  }
+
+  header {
+    height: 60rem;
+  }
+
+  .enter {
+    flex-direction: column;
+    height: 25rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20rem;
+  }
+
+  .popular {
+    border-bottom: 1px solid #008080;
+    padding: 1rem;
+    margin: 0 1rem;
+  }
+
+  .downtime {
+    margin: 0 1rem;
+    padding: 2rem 0;
+  }
+
+  footer a {
+    color: black;
+  }
+}
+
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+  #laptop {
+    display: none;
+  }
+
+  #tablet {
+    display: none;
+  }
+
+  #phone {
+    display: contents;
+  }
+
+  .enter {
+    flex-direction: column;
+    height: 30rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20rem;
+  }
+
+  h2 {
+    font-size: 3.3rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  header {
+    height: 70rem;
+  }
+
+  .top {
+    padding: 1rem 0;
+  }
+
+  .banner ul {
+    justify-content: space-between;
+  }
+
+  ul li {
+    margin: 0 2rem;
+  }
+
+  .top img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .hamburger div {
+    width: 2.5rem;
+    height: 5px;
+    background-color: #ffde59;
+    margin: 0.5rem 0;
+  }
+
+  .login {
+    padding: 1.5rem;
+    background-color: #ffde59;
+    border-radius: 20px;
+    width: 10rem;
+    text-align: center;
+  }
+
+  .health {
+    top: 6rem;
+    padding: 1.5rem;
+  }
+
+  .health a {
+    font-size: 1.7rem;
+  }
+
+  .popular {
+    border-bottom: 1px solid #008080;
+    padding: 1rem;
+    margin: 0 1rem;
+    font-size: 2rem;
+  }
+
+  .downtime {
+    margin: 0 1rem;
+    padding: 2rem 0;
+    font-size: 1.4rem;
+  }
+
+  footer a {
+    color: black;
+  }
 }
