@@ -55,6 +55,14 @@ header {
   background-repeat: no-repeat;
 }
 
+.header {
+  background-image: url("../img/comm.png");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 header nav ul {
   position: fixed;
   z-index: 1;
@@ -202,7 +210,6 @@ ul li:hover .drop2 ul li a:hover {
   width: 5rem;
   text-align: center;
   transition: 0.4s;
-  cursor: pointer;
 }
 
 .login:hover {
@@ -215,6 +222,55 @@ ul li:hover .drop2 ul li a:hover {
 .login:hover a {
   color: white;
 }
+
+/**
+.newsletter {
+	max-width: 600px;
+	width: 100%;
+	position: relative;
+  display: none;
+}
+
+.newsletter .input {
+	width: 100%;
+  margin-top: 1rem;
+	padding: 20px 80px 20px 60px;
+	border-radius: 5px;
+	border: none;
+	font-weight: bold;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.newsletter .fas {
+	position: absolute;
+	top: 30%;
+  transform: translateY(-30%);
+	left: 20px;
+}
+
+.newsletter .fas:hover {
+  color: teal;
+}
+
+.newsletter .btn {
+  margin-top: 1rem;
+  width: 120px;
+	position: relative;
+	background: teal;
+	padding: 1rem;
+	border-radius: 25px;
+	font-size: 12px;
+	letter-spacing: 5px;
+	color: #fff;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.newsletter .btn:hover {
+  background: firebrick;
+}
+/**
 
 /** Newsletter Section Ends **/
 
@@ -233,7 +289,7 @@ ul li:hover .drop2 ul li a:hover {
 
 .move {
   position: absolute;
-  top: 180%;
+  top: 175%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -340,6 +396,97 @@ input[name="img"] {
 .down a:hover {
   color: #93252a;
 }
+
+/** Login HTML **/
+.login-box {
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.login-box h1 {
+  float: left;
+  font-size: 2.5rem;
+  border-bottom: 6px solid #ffde59;
+  margin-bottom: 3rem;
+  padding: 1rem 0;
+}
+
+.textbox {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  font-size: 1.2rem;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid #ffde59;
+}
+
+.textbox i {
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+
+.textbox input {
+  outline: none;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 1rem;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+
+.btn {
+  outline: none;
+  width: 100%;
+  background: teal;
+  border: 2px solid #ffde59;
+  border-radius: 20px;
+  color: white;
+  padding: 5px;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn1 {
+  background: none;
+  border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /** Media Query **/
