@@ -1,10 +1,8 @@
-html {
-  font-size: 16px;
-}
-
+html,
 body {
-  font-family: Delius;
-  background-color: #e7e8e4;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  background: #efc056;
 }
 
 a {
@@ -12,7 +10,7 @@ a {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 h3 {
@@ -51,27 +49,23 @@ h4 {
 
 header {
   background-image: url("../img/com.png");
-  height: 45rem;
+  height: 100vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-header ul {
+header nav ul {
   position: fixed;
   z-index: 1;
   width: 100%;
   top: 0;
-}
-
-.top {
   background-color: #68777c;
-  padding: 0.25rem 0;
 }
 
-.top img {
-  width: 40px;
-  height: 40px;
+.menu img {
+  width: 35px;
+  height: 35px;
 }
 
 .hamburger div {
@@ -81,36 +75,123 @@ header ul {
   margin: 0.5rem 0;
 }
 
+.menu ul li {
+  padding: 0.5rem 0;
+  margin: auto 1rem;
+}
+
+/**Dropdown**/
+.drop1,
+.drop2 {
+  display: none;
+}
+
+.fas {
+  margin-right: 12px;
+}
+
+.top .drop1 ul,
+.top .drop2 ul {
+  background: teal;
+  top: -0.5rem;
+  width: 200px;
+  transition: 0.4s;
+}
+
+.top .drop1 ul {
+  left: 0;
+}
+
+.top .drop2 ul {
+  right: 0;
+}
+
+.top .drop1 ul li,
+.top .drop2 ul li {
+  padding: 1rem;
+  transition: 0.4s;
+  margin: 0;
+}
+
+.top .drop1 ul li a,
+.top .drop2 ul li a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.top .drop1 ul li:hover,
+.top .drop2 ul li:hover {
+  background-color: #ffde59;
+  border-bottom: 2px solid #93252a;
+}
+
+ul li:hover .drop1,
+ul li:hover .drop2 {
+  display: block;
+  position: relative;
+}
+
+ul li:hover .drop1 ul,
+ul li:hover .drop2 ul {
+  display: block;
+  margin: 5px 0;
+}
+
+ul li:hover .drop1 ul li a:hover,
+ul li:hover .drop2 ul li a:hover {
+  color: #93252a;
+}
+
+/** Dropdown ends **/
+
+/** Health Starts **/
 .health {
   position: relative;
   top: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   background: #008080;
   padding: 1rem;
 }
 
+.health a:active {
+  color: #f1e9d2;
+}
+
 .health a {
   color: white;
 }
+/** Health Ends **/
 
+
+/** Newsletter Section Starts **/
 .enter {
-  margin-top: 25rem;
-  color: white;
+  color: #ffffff;
+}
+
+.enter1 {
+  position: absolute;
+  top: 60%;
+  left: 5%;
+}
+
+.enter2 {
+  position: absolute;
+  top: 60%;
+  left: 65%;
 }
 
 .enter a {
-  color: red;
+  color: #93252a;
 }
 
 .enter h2 {
   padding-bottom: 1rem;
+  font-family: 'Delius', cursive;
 }
 
 .enter h3 {
-  font-family: Montaga;
   padding-bottom: 1rem;
 }
 
@@ -120,8 +201,97 @@ header ul {
   border-radius: 20px;
   width: 5rem;
   text-align: center;
+  transition: 0.4s;
+  cursor: pointer;
 }
 
+.login:hover {
+  background: teal;
+  width: 10rem;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.login:hover a {
+  color: white;
+}
+
+/** Newsletter Section Ends **/
+
+/** SlideShow Styling Starts **/
+.slider {
+  background: #f1e9d2;
+}
+
+.slideshow {
+  padding: 5rem 0;
+  margin: auto;
+  width: 800px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.move {
+  position: absolute;
+  top: 180%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dash {
+  border: 4px solid #fff;
+  border-radius: 100%;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: 0.4s;
+  margin: 0 3.5rem;
+}
+
+.dash:hover {
+  background-color: #93252a;
+}
+
+input[name="img"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides {
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  width: 25%;
+  transition: 0.6s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+#c1:checked ~ .s1 {
+  margin-left: 0;
+}
+
+#c2:checked ~ .s1 {
+  margin-left: -25%;
+}
+
+#c3:checked ~ .s1 {
+  margin-left: -50%;
+}
+
+#c4:checked ~ .s1 {
+  margin-left: -75%;
+}
+
+/** SlideShow Styling Ends **/
+
+
+/** Social Media Starts **/
 .media {
   text-align: center;
   margin: 5rem 0;
@@ -130,15 +300,19 @@ header ul {
 .connect h2 {
   font-weight: bold;
   padding-bottom: 3rem;
+  font-family: 'Delius', cursive;
 }
 
 .social a {
-  padding: 2rem;
+  padding: 4rem;
 }
 
+/** Social Media Ends **/
+
+
 .quicklinks {
-  border-top: 1px solid #68777c;
-  padding: 2rem 0;
+  background-color: #e7e8e4;
+  padding: 4rem 0;
 }
 
 .link h3 {
@@ -147,7 +321,12 @@ header ul {
 
 .link a {
   padding: 0.25rem 0;
-  color: black;
+  color: #000000;
+}
+
+.link a:hover {
+  color: #93252a;
+  text-decoration: underline;
 }
 
 .down {
@@ -155,8 +334,13 @@ header ul {
 }
 
 .down a {
-  color: black;
+  color: #000000;
 }
+
+.down a:hover {
+  color: #93252a;
+}
+
 
 /** Media Query **/
 @media only screen

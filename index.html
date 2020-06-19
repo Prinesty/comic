@@ -5,55 +5,97 @@
     <title>Comic Productions</title>
     <link type="text/css" rel="stylesheet" href="resources/css/reset.css">
     <link type="text/css" rel="stylesheet" href="resources/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Delius|Montaga&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+
   </head>
   <body>
     <!-- Header Section -->
-    <header class="banner">
-      <ul class="flex-row top">
-        <li>
-          <a href="#">
-          <div class="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          </a>
-        </li>
-        <li><a href="#"><img src="./resources/img/comic.jpg" alt=""></a></li>
-        <li><a href="#"><img src="./resources/img/plus.jpg" alt=""></a></li>
-      </ul>
+    <header>
+      <nav class="menu">
+        <ul class="flex-btn top">
+          <li>
+            <div class="hamburger">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="drop1">
+              <ul>
+                <li><a href="#"><i class="fas fa-home"></i>Why Comic?</a></li>
+                <li><a href="#"><i class="fas fa-user"></i>Team</a></li>
+                <li><a href="#"><i class="fas fa-address-card"></i>About Us</a></li>
+                <li><a href="#"><i class="fas fa-address-card"></i>Contact Us</a></li>
+                <li><a href="#"><i class="fas fa-address-card"></i>Help</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#"><img src="./resources/img/comic.jpg" alt=""></a></li>
+          <li><a href="#"><img src="./resources/img/plus.jpg" alt=""></a>
+            <div class="drop2">
+              <ul>
+                <li><a href="#"><i class="fas fa-home"></i>Next Production</a></li>
+                <li><a href="#"><i class="fas fa-user"></i>FAQs</a></li>
+                <li><a href="#"><i class="fas fa-user"></i>Login</a></li>
+                <li><a href="#"><i class="fas fa-user"></i>Sign up</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
 
       <!-- Covid-19 Section -->
       <div class="health">
-        <p><a href="#">Evaluate COVID‑19 symptoms <span>and understand next steps</span></a></p>
+        <a href="#">Evaluate COVID‑19 symptoms and understand next steps</a>
       </div>
-      <!--
-      <div id="menu">
-        <ul class="menu">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">About Us</a></li>
-          <li><a href="./news.html">News</a></li>
-          <li><a href="./entertainment.html">Entertainment</a></li>
-        </ul>
-      </div>
-      -->
+
       <!-- Newsletter/Entertainment Section-->
-      <div class="flex-row enter">
-        <div class="news">
+      <div class="enter">
+        <div class="news enter1">
           <h2>Comic Newsletter</h2>
-          <h3>Sign up to the world of Comic updates</h3>
+          <h3>Sign up for weekly updates</h3>
           <h4 class="login"><a href="#">Sign up</a></h4>
         </div>
-        <div class="entertainment">
+        <div class="entertainment enter2">
           <h2>Comic Archives</h2>
-          <h3>Brace youself for a whole new world</h3>
+          <h3>Brace youself for cacophony</h3>
           <h4 class="login"><a href="#">Enter</a></h4>
         </div>
       </div>
     </header>
+
+    <!-- Comic Slider -->
+    <div class="slider">
+      <div class="slideshow">
+        <div class="slides">
+          <input type="radio" name="img" id="c1" checked>
+          <input type="radio" name="img" id="c2">
+          <input type="radio" name="img" id="c3">
+          <input type="radio" name="img" id="c4">
+          <div class="slide s1">
+            <img src="resources/img/c1.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="resources/img/c2.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="resources/img/c3.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="resources/img/c4.png" alt="">
+          </div>
+        </div>
+
+        <div class="move">
+          <label for="c1" class="dash"></label>
+          <label for="c2" class="dash"></label>
+          <label for="c3" class="dash"></label>
+          <label for="c4" class="dash"></label>
+        </div>
+      </div>
+    </div>
+
 
     <!-- Social Media Section -->
     <div class="media">
@@ -61,9 +103,9 @@
         <h2>Connect with Comic Productions</h2>
       </div>
       <div class="social">
-        <a  style="color: #3b5998" href="facebook.com" target="_blank"><i class="fa fa-facebook fa-4x"></i></a>
-        <a style="color: #00acee" href="twitter.com" target="_blank"><i class="fa fa-twitter fa-4x"></i></a>
-        <a style="color: #c4302b" href="youtube.com" target="_blank"><i class="fa fa-youtube fa-4x"></i></a>
+        <a  style="color: #3b5998" href="facebook.com" target="_blank"><i class="fab fa-facebook-f fa-4x"></i></a>
+        <a style="color: #00acee" href="twitter.com" target="_blank"><i class="fab fa-twitter fa-4x"></i></a>
+        <a style="color: #c4302b" href="youtube.com" target="_blank"><i class="fab fa-youtube fa-4x"></i></a>
       </div>
     </div>
 
