@@ -4,7 +4,7 @@ html,
 body {
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
-  background: #efc056;
+  background: #ffffff;
 }
 
 a {
@@ -25,9 +25,15 @@ h4 {
 }
 
 .contain {
-  max-width: 960px;
+  max-width: 920px;
   margin: 0 auto;
 }
+
+.contain-covid {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
 
 .flex-row {
   display: flex;
@@ -49,10 +55,16 @@ h4 {
   align-items: flex-start;
 }
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /**Standard Styling Ends**/
 
 /**Header & Nav Starts**/
-header {
+.home-head {
   background-image: url("../img/com.png");
   height: 100vh;
   background-position: center;
@@ -60,7 +72,7 @@ header {
   background-repeat: no-repeat;
 }
 
-.header {
+.logsign-head {
   background-image: url("../img/comm.png");
   height: 100vh;
   background-position: center;
@@ -68,13 +80,21 @@ header {
   background-repeat: no-repeat;
 }
 
-header nav ul {
+.about-head nav ul {
+  width: 100%;
+  background-color: #68777c;
+  justify-content: center;
+}
+
+.home-head nav ul,
+.logsign-head nav ul {
   position: fixed;
   z-index: 1;
   width: 100%;
   top: 0;
   background-color: #68777c;
 }
+
 
 .menu img {
   width: 35px;
@@ -173,6 +193,10 @@ ul li:hover .drop2 ul li a:hover {
   color: #f1e9d2;
 }
 
+.health a:hover {
+  text-decoration: underline;
+}
+
 .health a {
   color: white;
 }
@@ -233,7 +257,7 @@ ul li:hover .drop2 ul li a:hover {
 
 /** SlideShow Styling Starts **/
 .slider {
-  background: #f1e9d2;
+  border-bottom: 1px solid #000000;
 }
 
 .slideshow {
@@ -316,20 +340,22 @@ input[name="img"] {
   font-family: 'Delius', cursive;
 }
 
-.social a {
-  padding: 4rem;
+.social {
+
 }
+
 
 /** Social Media Ends **/
 
 /** Quicklinks Starts **/
 .quicklinks {
   background-color: #e7e8e4;
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 
 .link h3 {
   padding-bottom: 1rem;
+  font-weight: bold;
 }
 
 .link a {
@@ -522,6 +548,161 @@ a .btnn:hover {
 
 /** Sign up HTML Ends **/
 
+/** About Us HTML Starts **/
+.about h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  background-color: #93252a;
+  padding: 10rem 0 2rem 3rem;
+  color: #ffffff;
+}
+
+.goal .mission {
+  background-color: teal;
+  color: white;
+
+}
+
+.goal h3 {
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.goal p {
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+.vision-clear {
+  margin: 2rem 10rem;
+}
+
+.mission-clear {
+  margin: 0 10rem;
+}
+
+.back-home {
+  margin: 2rem;
+}
+
+.back-home a {
+  padding: 1rem;
+  background-color: teal;
+  border-radius: 25px;
+  color: white;
+}
+
+.back-home a:hover {
+  background: #93252a;
+}
+
+/** About Us HTML Ends **/
+
+/** Covid Health HTML Starts **/
+
+.covid-pic img {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  margin: 3rem 0;
+  box-shadow: 5px 10px #888888;
+}
+
+.region {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid gray;
+}
+
+.region1 p {
+  padding-top: 1rem;
+}
+
+.region1 a {
+  color: cadetblue;
+}
+
+.region1 h3 {
+  font-weight: bold;
+}
+
+.screening {
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  border-bottom: 1px solid gray;
+  align-items: flex-start;
+}
+
+.screening h3 {
+  font-size: 1.2rem;
+}
+
+.screening .regional {
+  margin: 1rem;
+}
+
+.regional .fas {
+  padding: 1rem;
+  border-radius: 50px;
+}
+
+/** Covid Health HTML Ends **/
+
+/** Meet the Team HTML Starts **/
+
+.found {
+  padding: 5rem;
+  max-width: 720px;
+  margin: auto;
+  text-align: center;
+  line-height: 2;
+}
+
+.staff {
+  margin: 3rem 4rem;
+  flex-wrap: wrap;
+}
+
+.team {
+  margin: auto;
+}
+
+.team h2 {
+  padding: 2rem;
+  font-weight: 900;
+  font-size: 3.5rem;
+}
+
+.team-img {
+  width: 30%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.team-img h3 {
+  font-size: 2rem;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.team-img p {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  opacity: 0.8;
+}
+
+.team-img .fas,
+.team-img .fab {
+  color: teal;
+}
+
+
+
+.team-img img {
+  width: 100%;
+  height: auto;
+}
+
+/** Meet the Team HTML Ends**/
 
 
 
@@ -551,7 +732,7 @@ a .btnn:hover {
 
 
 
-/** Media Query **/
+/** Media Query **
 @media only screen
 and (min-width: 720px)
 and (max-width: 1600px) {
@@ -575,7 +756,7 @@ and (max-width: 720px) {
   }
 
   #tablet {
-    visibility: visible;
+    visibility: none;
   }
 
   #phone {
@@ -624,7 +805,7 @@ and (orientation: portrait) {
   }
 
   #phone {
-    display: contents;
+    display: none;
   }
 
   .enter {
@@ -710,3 +891,5 @@ and (orientation: portrait) {
     color: black;
   }
 }
+
+**/
