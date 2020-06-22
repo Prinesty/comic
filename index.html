@@ -11,16 +11,16 @@
   </head>
   <body>
     <!-- Header Section -->
-    <header class="home-head">
-      <nav class="menu">
-        <ul class="flex-btn top">
+    <header class="main-header">
+      <nav class="main-menu">
+        <ul class="flex-btn sub-menu">
           <li>
             <div class="hamburger">
               <div></div>
               <div></div>
               <div></div>
             </div>
-            <div class="drop1">
+            <div class="left-menu-dropdown">
               <ul>
                 <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
                 <li><a href="team.html"><i class="fas fa-users"></i>Team</a></li>
@@ -30,9 +30,9 @@
               </ul>
             </div>
           </li>
-          <li><a href="index.html"><img src="./resources/img/comic.jpg" alt=""></a></li>
-          <li><a href="#"><img src="./resources/img/plus.jpg" alt=""></a>
-            <div class="drop2">
+          <li><a href="index.html" title="Home"><img src="./resources/img/comic.png" alt="comic logo"></a></li>
+          <li><a href="#"><img src="./resources/img/plus.png" alt=""></a>
+            <div class="right-menu-dropdown">
               <ul>
                 <li><a href="next.html"><i class="fas fa-film"></i>Next Production</a></li>
                 <li><a href="faq.html"><i class="fas fa-question"></i>FAQs</a></li>
@@ -49,96 +49,49 @@
         <a href="covid.html">Evaluate COVID‑19 symptoms and understand next steps <i class="fas fa-angle-right"></i></a>
       </div>
 
-      <!-- Newsletter/Entertainment Section-->
-      <div class="enter">
-        <div class="news enter1">
+      <!-- Pop-Header Section-->
+      <div class="pop-header">
+        <div class="pop-left">
           <h2>Comic Newsletter</h2>
           <h3>Subscribe for weekly updates</h3>
-          <h4 class="login"><a href="#">Subscribe</a></h4>
+          <a href="#">Subscribe</a>
         </div>
-        <div class="entertainment enter2">
+        <div class="pop-right">
           <h2>Comic Archives</h2>
           <h3>Brace youself for cacophony</h3>
-          <h4 class="login"><a href="next.html">Enter</a></h4>
+          <a href="next.html">Enter</a>
         </div>
       </div>
     </header>
 
-    <!-- Comic Slider -->
-    <div class="slider">
-      <div class="slideshow">
-        <div class="slides">
-          <input type="radio" name="img" id="c1" checked>
-          <input type="radio" name="img" id="c2">
-          <input type="radio" name="img" id="c3">
-          <input type="radio" name="img" id="c4">
-          <div class="slide s1">
-            <img src="resources/img/c1.png" alt="">
-          </div>
-          <div class="slide">
-            <img src="resources/img/c2.png" alt="">
-          </div>
-          <div class="slide">
-            <img src="resources/img/c3.png" alt="">
-          </div>
-          <div class="slide">
-            <img src="resources/img/c4.png" alt="">
-          </div>
-        </div>
-
-        <div class="move">
-          <label for="c1" class="dash"></label>
-          <label for="c2" class="dash"></label>
-          <label for="c3" class="dash"></label>
-          <label for="c4" class="dash"></label>
-        </div>
-      </div>
-    </div>
-
-    <!-- Social Media Section -->
-    <div class="media">
-      <div class="connect">
-        <h2>Connect with Comic Productions</h2>
-      </div>
-      <div class="social flex-row contain">
-        <div class="facebook">
-          <a style="color: #3b5998" href="facebook.com" target="_blank"><i class="fab fa-facebook-f fa-4x"></i></a>
-        </div>
-        <div class="twitter">
-          <a style="color: #00acee" href="twitter.com" target="_blank"><i class="fab fa-twitter fa-4x"></i></a>
-        </div>
-        <div class="youtube">
-          <a style="color: #c4302b" href="youtube.com" target="_blank"><i class="fab fa-youtube fa-4x"></i></a>
-        </div>
-      </div>
-    </div>
-
     <!-- Footer section with quicklinks and T&Cs -->
     <footer class="quicklinks">
-      <div class="flex-btn contain">
+      <div class="flex-btn footer-container">
+        <div class="link logo">
+          <img src="./resources/img/comic.png" alt="comic logo">
+          <p class="copyright">&copy 2020 Comic Productions</p>
+          <a href="#">Terms & Conditions</a> | <a href="#"> Privacy</a>
+        </div>
         <div class="link flex-col">
           <h3>About Comic</h3>
           <a href="about.html">About Us</a>
           <a href="team.html">Meet the Team</a>
-          <a href="career.html">Work with Comic</a>
-        </div>
-        <div class="link flex-col">
-          <h3>Popular Links</h3>
-          <a href="next.html">Upcoming Production</a>
-          <a href="#">Awards</a>
-          <a href="#">Archives</a>
-        </div>
-        <div class="link flex-col">
-          <h3>Connect with Us</h3>
+          <a href="signup.html">Join Comic</a>
           <a href="contact.html">Contact Us</a>
-          <a href="#">How to Audition</a>
-          <a href="#">Sponsors</a>
         </div>
-      </div>
-      <div class="down contain">
-        <div class="flex-btn">
-          <p class="copyright">&copy 2020 Comic Productions, All Rights Reserved</p>
-          <span><a href="#">Terms & Conditions | </a><a href="#"> Privacy</a></span>
+        <div class="link flex-col">
+          <h3>Top Picks</h3>
+          <a href="next.html#today">Featured today</a>
+          <a href="next.html#hotpick">Fan favourite</a>
+          <a href="next.html">Comic Orignals</a>
+        </div>
+        <div class="link">
+          <h3>Follow Us</h3>
+          <div class="social flex-row">
+            <a style="color: #3b5998" href="facebook.com" target="_blank"><i class="fab fa-facebook-f fa-3x"></i></a>
+            <a style="color: #00acee" href="twitter.com" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
+            <a style="color: #c4302b" href="youtube.com" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
+          </div>
         </div>
       </div>
     </footer>
